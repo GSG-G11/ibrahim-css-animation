@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .btn{
+        border: 0;
+        outline: 0;
+        width: 100px;
+        height: 100px;
+        color: #fff;
+    background-color:rgb(70, 130, 180);
+    border-radius: 50%;
+    transition: all 2s ease-in-out ;
+    }
+    .btn:hover{
+        transform: scale(2) rotate(20deg) translateY(50%);
+        border-radius: 0;
+
+    }
+</style>
+<body>
+<button class="btn">Hover Me</button>
+</body>
+</html>

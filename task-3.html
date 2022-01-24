@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<style>
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .img-container{
+        overflow: hidden;
+        transform: translate(50vw,50vh) scale(0);
+        animation: image 3s ease-in-out infinite;
+    }
+    @keyframes image {
+        25%{
+            transform: translate(-25vw,0) scale(1);
+   
+        }
+        50%{
+            border-radius: 0%;
+            transform: translate(0,0) scale(0.75);
+        }
+        75%{
+            border-radius: 50%;
+        }
+        100%{
+            border-radius: 50%;
+            transform: translate(0,0) scale(0.75);
+
+        }
+    }
+
+</style>
+<body>
+<div class="img-container">
+    <img src="./ang.png" alt="">
+</div>
+</body>
+</html>
